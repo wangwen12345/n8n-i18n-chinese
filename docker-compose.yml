@@ -10,7 +10,7 @@ services:
       - N8N_DEFAULT_LOCALE=zh-CN
       - N8N_SECURE_COOKIE=false
     volumes:
-      - ./editor-ui-dist:/usr/local/lib/node_modules/n8n/node_modules/n8n-editor-ui/dist
+      - ./dist:/usr/local/lib/node_modules/n8n/node_modules/n8n-editor-ui
     stdin_open: true
     tty: true
     restart: unless-stopped
